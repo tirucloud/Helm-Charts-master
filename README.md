@@ -22,6 +22,16 @@ The main goal of this project is to:
 - **Package and Publish** Helm charts on GitHub Pages for public or private use.
 - **Enable Reusability** by providing easily configurable Helm charts to simplify future deployments.
 
+```
+helm install go-portfolio-app .
+k get ns
+k get all -n go-app
+k get all -n go-app
+kubectl patch svc go-portfolio-svc -n go-portfolio -p '{"spec": {"type": "NodePort"}}'
+kubectl patch svc go-portfolio-svc -n go-app -p '{"spec": {"type": "NodePort"}}'
+k get all -n go-app
+```
+
 ## 📘 Comprehensive Guide
 
 For a complete step-by-step guide on how to create, package, and publish your Helm charts, refer to my detailed guide on Medium:  
