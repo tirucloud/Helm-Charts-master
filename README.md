@@ -24,10 +24,9 @@ The main goal of this project is to:
 
 ```
 helm install go-portfolio-app .
-k get ns
-k get all -n go-app
-k get all -n go-app
-kubectl patch svc go-portfolio-svc -n go-portfolio -p '{"spec": {"type": "NodePort"}}'
+kubectl get ns
+kubectl get all -n go-app
+kubectl get all -n go-app
 kubectl patch svc go-portfolio-svc -n go-app -p '{"spec": {"type": "NodePort"}}'
 k get all -n go-app
 ```
