@@ -24,6 +24,7 @@ The main goal of this project is to:
 
 ```
 helm install go-portfolio-app .
+kubectl get all --all-namespaces
 kubectl get ns
 kubectl get all -n go-app
 kubectl get all -n go-app
